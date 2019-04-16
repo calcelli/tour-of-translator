@@ -1,7 +1,32 @@
 <h2>{{text.text | uppercase}} Details</h2>
-<div><span>id: </span>{{text.id}}</div>
-<div>
-  <label>text: 
+<!-- <div><span>id: </span>{{text.id}}</div> -->
+<div class="tooltip">
+  <!-- <label>text:  -->
       <input [(ngModel)]="text.text" placeholder="text"/>
-  </label>
+      <span class="tooltiptext">
+        <table>
+          <tr>
+            <th *ngFor="let conj of conjugations">{{conj.tense}}</th>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.yo}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.tu}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.elEllaUd}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.nosotros}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.vosotros}}</td>
+          </tr>
+          <tr>
+            <td *ngFor="let conj of conjugations">{{conj.ellosEllasUds}}</td>
+          </tr>
+        </table>
+      </span>
+    <!-- </label> -->
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Text } from '../text';
+import { CONJUGATIONS } from '../mock-translations';
 
 @Component({
   selector: 'app-translator',
@@ -8,9 +9,11 @@ import { Text } from '../text';
 })
 export class TranslatorComponent implements OnInit {
 
+  conjugations = CONJUGATIONS;
+
   text: Text  = {
     id: 1,
-    text: 'Windstorm'
+    text: 'I eat'
   };
 
   constructor() { }
