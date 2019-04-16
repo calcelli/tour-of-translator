@@ -1,10 +1,19 @@
-<h2>{{text.text | uppercase}} Details</h2>
+<!-- <h2>{{text.text | uppercase}} Details</h2> -->
 <!-- <div><span>id: </span>{{text.id}}</div> -->
 <div class="tooltip">
   <!-- <label>text:  -->
-      <input [(ngModel)]="text.text" placeholder="text"/>
-      <span class="tooltiptext">
-        <app-conjugation-table [verb]="verbToConjugate"></app-conjugation-table>
-      </span>
+      <!-- <input [(ngModel)]="text.text" placeholder="text"/> -->
+      <div class=translatearea>
+        <div class="baselanguage">
+          <textarea [(ngModel)]='textToTranslate' rows="6" cols="30">                             
+          </textarea>
+        </div>
+          <div class=translatedlanguage>
+            <h2>Comer</h2>
+            <span class="tooltiptext">
+              <app-conjugation-table [verb]="verbToConjugate"></app-conjugation-table>
+            </span>
+          </div>
+      </div>
     <!-- </label> -->
 </div>

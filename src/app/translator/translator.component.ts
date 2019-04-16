@@ -11,6 +11,7 @@ export class TranslatorComponent implements OnInit {
 
   conjugations = CONJUGATIONS;
   verbToConjugate = 'comer';
+  textToTranslate: string;
 
   text: Text  = {
     id: 1,
