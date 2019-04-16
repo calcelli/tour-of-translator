@@ -1,0 +1,35 @@
+<div class="vtable-header">
+  <span class="vtable-label">
+    {{verb}}
+  </span>
+</div>
+<table>
+  <tr>
+    <th></th>
+    <th *ngFor="let conj of conjugations">{{conj.tense}}</th>
+  </tr>
+  <tr>
+    <td>yo</td>
+    <td *ngFor="let conj of conjugations">{{conj.yo}}</td>
+  </tr>
+  <tr>
+    <td>tu</td>
+    <td *ngFor="let conj of conjugations">{{conj.tu}}</td>
+  </tr>
+  <tr>
+    <td>el/ella/Ud.</td>
+    <td *ngFor="let conj of conjugations">{{conj.elEllaUd}}</td>
+  </tr>
+  <tr>
+    <td>nosotros</td>
+    <td *ngFor="let conj of conjugations">{{conj.nosotros}}</td>
+  </tr>
+  <tr>
+    <td>vosotros</td>
+    <td *ngFor="let conj of conjugations">{{conj.vosotros}}</td>
+  </tr>
+  <tr>
+    <td>ellos/ellas/Uds.</td>
+    <td *ngFor="let conj of conjugations">{{conj.ellosEllasUds}}</td>
+  </tr>
+</table>

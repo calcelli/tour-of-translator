@@ -1,0 +1,33 @@
+.vtable {
+    line-height: normal;
+    border-collapse: separate;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+}
+.vtable-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 10px;
+}
+.vtable-label {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding-left: 5px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }

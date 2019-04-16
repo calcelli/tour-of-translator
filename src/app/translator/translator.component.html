@@ -4,29 +4,7 @@
   <!-- <label>text:  -->
       <input [(ngModel)]="text.text" placeholder="text"/>
       <span class="tooltiptext">
-        <table>
-          <tr>
-            <th *ngFor="let conj of conjugations">{{conj.tense}}</th>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.yo}}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.tu}}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.elEllaUd}}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.nosotros}}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.vosotros}}</td>
-          </tr>
-          <tr>
-            <td *ngFor="let conj of conjugations">{{conj.ellosEllasUds}}</td>
-          </tr>
-        </table>
+        <app-conjugation-table [verb]="verbToConjugate"></app-conjugation-table>
       </span>
     <!-- </label> -->
 </div>

@@ -10,6 +10,7 @@ import { CONJUGATIONS } from '../mock-translations';
 export class TranslatorComponent implements OnInit {
 
   conjugations = CONJUGATIONS;
+  verbToConjugate = 'comer';
 
   text: Text  = {
     id: 1,
